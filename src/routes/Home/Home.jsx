@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 const Home =()=>{
 
-    const [dados, setDados]= useState([])
+    // const [produtos, setProdutos]= useState([])
 
     useEffect(()=>{
         fetch("https://exemplodb.vercel.app/dados.json")
@@ -16,12 +16,12 @@ const Home =()=>{
 
     return(
         <>
-            {dados.map((item, index)=>(
+{/*             {dados.map((item, index)=>(
                 <div key={index}>
                     <p>{item.nome}</p>
                     <img src={item.foto}/>
                 </div>
-            ))}
+            ))} */}
         </>
     )
 }
