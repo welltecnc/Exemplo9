@@ -18,7 +18,7 @@ const Produto=()=>{
 
     const handleSubmit =(e)=>{
     e.preventDefault();
-    fetch(`http://localhost:5000/produtos/${id ? id :""}`,{
+    fetch(`https://exemplodb.vercel.app/dados.json/${id ? id :""}`,{
         method:"post",
         headers:{
             'Content-Type': "application/json"
@@ -31,7 +31,7 @@ const Produto=()=>{
 
     useEffect(()=>{
         if(id){
-            fetch(`http://localhost:5000/produtos/${id}`)
+            fetch(`https://exemplodb.vercel.app/dados.json/${id}`)
             .then((res)=>{
                 return res.json();
             })
