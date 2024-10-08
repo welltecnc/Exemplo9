@@ -5,7 +5,7 @@ const Home =()=>{
     // const [produtos, setProdutos]= useState([])
 
     useEffect(()=>{
-        fetch("https://exemplodb.vercel.app/dados.json")
+        fetch("https://dados-cidade.vercel.app/produtos")
         .then((res)=>{
             return res.json()
         })
