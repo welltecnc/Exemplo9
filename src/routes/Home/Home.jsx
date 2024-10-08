@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 const Home =()=>{
 
-    // const [produtos, setProdutos]= useState([])
+    const [produtos, setProdutos]= useState([])
 
     useEffect(()=>{
         fetch("https://dados-cidade.vercel.app/produtos")
@@ -16,12 +16,12 @@ const Home =()=>{
 
     return(
         <>
-{/*             {dados.map((item, index)=>(
+            {produtos.map((item, index)=>(
                 <div key={index}>
                     <p>{item.nome}</p>
                     <img src={item.foto}/>
                 </div>
-            ))} */}
+            ))}
         </>
     )
 }
